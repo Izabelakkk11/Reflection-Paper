@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflection Paper</title>
+    <!-- Include PyScript CSS and JS -->
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #B0E0E6; 
+            margin: 0;
+            padding: 10px;
+        }
+        .container {
+            background-color: white; 
+            border: 2px solid #b8860b; 
+            padding: 20px; /* Adjusted padding */
+            border-radius: 10px;
+            max-width: 600px; /* Set max-width to 600px */
+            margin: auto;
+            width: 90%; /* Allow container to take 90% of the width */
+        }
+        h1 {
+            color: #000000; 
+            text-align: center; 
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            background: #fff7e6; 
+            border: 1px solid #b8860b; 
+            color: #663399; 
+            white-space: pre-line; 
+        }
+        .name-course {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #b8860b; 
+            border-radius: 5px;
+            background: #fff7e6; 
+            color: #6F4685; 
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reflection Paper: Data Privacy and Awareness Campaign</h1>
+    
+    <div class="container"> <!-- Container for name and reflection output -->
+        <div class="name-course">
+            Name: Ronquillo, Izabela Dorinne P. <br>
+            <br>
+            Course and Year: BSIT 1st Year
+        </div>
+
+        <div class="result" id="reflection_output"> </div>
+
+        <py-script>
+            from pyscript import Element
+
+            # Reflection text using multi-line string for better readability
+            reflection_text = (
+                "<p>Reflecting on the Data Privacy and Awareness Campaign, I realize the immense importance of safeguarding our personal information in today's digital world. "
+                "This campaign has provided me with a deeper understanding of the Data Privacy Act of 2012 and its significance in protecting our rights. "
+                "It's crucial for us, as students, to be aware of the potential risks associated with sharing personal data online and to take proactive measures to protect ourselves. "
+                "The campaign's efforts to educate the public, especially the youth, through social media and community outreach, resonate deeply with me as it emphasizes the need for digital literacy in our generation.</p>" 
+
+                "<p>The lack of awareness among many of my peers is concerning. "
+                "Before this campaign, I didn't fully grasp the dangers of oversharing on social media or the importance of securing personal information. "
+                "The information shared during the campaign, like how to create strong passwords and recognize phishing attempts, is invaluable. "
+                "It's evident that understanding data privacy is not just a legal necessity but a crucial life skill. "
+                "The relatable content and practical tips provided have equipped me with the knowledge to make informed decisions and to educate my friends about these important issues.</p>"
+
+                "<p>Overall, the campaign has inspired me to be more vigilant and responsible with my online presence. "
+                "It has highlighted the importance of creating a culture of privacy awareness among students. "
+                "By collaborating with educational institutions and utilizing platforms that students engage with, the campaign has effectively reached and educated us. "
+                "Moving forward, I feel empowered to take control of my personal data and to advocate for data privacy within my community. "
+                "This reflection has underscored the importance of continuous education and awareness in maintaining data privacy in an ever-evolving digital landscape.</p>"
+            )
+
+            # Display the reflection output
+            Element("reflection_output").element.innerHTML = reflection_text
+        </py-script>
+    </div>
+</body>
+</html>
